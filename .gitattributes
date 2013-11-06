@@ -2,3 +2,4 @@
 /Makefile -text
 /apertium-pes-glk.pes-glk.dix -text
 /apertium-pes-glk.pes-glk.t1x -text
+/translate.sh -text
