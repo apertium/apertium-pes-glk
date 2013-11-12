@@ -8,6 +8,14 @@
       <cat-item tags="n.*"/>
     </def-cat>
    
+    <def-cat n="vrb">
+      <cat-item tags="vblex"/>
+    </def-cat>
+   
+    <def-cat n="vrb-cont">
+      <cat-item tags="vblex.cont.*"/>
+    </def-cat>
+   
   </section-def-cats>
   
   <section-def-attrs>
@@ -35,8 +43,30 @@
       <attr-item tags="ND"/>
     </def-attr>
        
+    <def-attr n="per">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+    </def-attr>
+       
+    <def-attr n="tns-mood">
+      <attr-item tags="pri"/>
+      <attr-item tags="prs"/>
+      <attr-item tags="past"/>
+      <attr-item tags="pp"/>
+      <attr-item tags="inf"/>
+    </def-attr>
+       
+    <def-attr n="asp">
+      <attr-item tags="cont"/>
+    </def-attr>
+       
     <def-attr n="a_nom">
       <attr-item tags="n"/>
+    </def-attr>
+    
+    <def-attr n="a_vrb">
+      <attr-item tags="vblex"/>
     </def-attr>
     
   </section-def-attrs>
@@ -55,6 +85,23 @@
         <out>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+    
+    <rule comment=""> 
+      <pattern>
+        <pattern-item n="vrb-cont"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="lem"/>
+            <clip pos="1" side="tl" part="a_verb"/>
+            <clip pos="1" side="tl" part="tns-mood"/>
+            <clip pos="1" side="tl" part="per"/>
+            <clip pos="1" side="tl" part="nbr"/>
           </lu>
         </out>
       </action>
