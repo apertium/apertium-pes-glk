@@ -111,6 +111,9 @@
           </lu>
         </out>
       </action>
+    </rule>
+    
+    <rule comment=""> 
       <pattern>
         <pattern-item n="vrb-perfect"/>
       </pattern>
