@@ -16,8 +16,16 @@
       <cat-item tags="vblex.cont.*"/>
     </def-cat>
    
+    <def-cat n="vrb-neg-cont">
+      <cat-item tags="vblex.neg.cont.*"/>
+    </def-cat>
+   
     <def-cat n="vrb-perfect">
-      <cat-item tags="vblex.*.pprf.*"/>
+      <cat-item tags="vblex.pprf.*"/>
+    </def-cat>
+   
+    <def-cat n="vrb-neg-perfect">
+      <cat-item tags="vblex.neg.pprf.*"/>
     </def-cat>
    
   </section-def-cats>
@@ -109,6 +117,23 @@
           <lu>
             <clip pos="1" side="tl" part="lem"/>
             <clip pos="1" side="tl" part="a_vrb"/>
+            <clip pos="1" side="tl" part="tns-mood"/>
+            <clip pos="1" side="tl" part="per"/>
+            <clip pos="1" side="tl" part="nbr"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+    
+    <rule comment=""> 
+      <pattern>
+        <pattern-item n="vrb-neg-cont"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="lem"/>
+            <clip pos="1" side="tl" part="a_vrb"/>
             <clip pos="1" side="tl" part="a_neg"/>
             <clip pos="1" side="tl" part="tns-mood"/>
             <clip pos="1" side="tl" part="per"/>
@@ -121,6 +146,23 @@
     <rule comment=""> 
       <pattern>
         <pattern-item n="vrb-perfect"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="lem"/>
+            <clip pos="1" side="tl" part="a_vrb"/>
+            <lit-tag v="past"/>
+            <clip pos="1" side="tl" part="per"/>
+            <clip pos="1" side="tl" part="nbr"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+    
+    <rule comment=""> 
+      <pattern>
+        <pattern-item n="vrb-neg-perfect"/>
       </pattern>
       <action>
         <out>
