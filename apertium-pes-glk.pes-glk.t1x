@@ -17,7 +17,7 @@
     </def-cat>
    
     <def-cat n="vrb-perfect">
-      <cat-item tags="vblex.pprf.*"/>
+      <cat-item tags="vblex.*.pprf.*"/>
     </def-cat>
    
   </section-def-cats>
