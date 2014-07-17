@@ -1,6 +1,7 @@
 * text=auto !eol
 /Makefile -text
 /apertium-pes-glk.pes-glk.dix -text
+/apertium-pes-glk.pes-glk.lrx -text
 /apertium-pes-glk.pes-glk.t1x -text
 /modes.xml -text
 /update-morph.sh -text

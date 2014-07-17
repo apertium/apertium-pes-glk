@@ -92,8 +92,8 @@
       <program name="lt-proc -b">
         <file name="pes-glk.autobil.bin"/>
       </program>
-      <program name="apertium-lrx-proc">
-        <file name="pes-glk.lrx.bin"/>
+      <program name="lrx-proc -m">
+        <file name="pes-glk.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
         <file name="apertium-pes-glk.pes-glk.t1x"/>
